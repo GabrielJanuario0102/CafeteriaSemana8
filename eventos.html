@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script>
+        function handleMouseClick(event) {
+            console.log("Cadastrou.");
+        };
+
+        let handleMouserOver = (event) => {
+            console.log("passou o mouse em cima do botão de cadastro.");
+            document.getElementById('textoMensagem').style.backgroundColor = 'red';
+        };
+
+
+
+    </script>
+</head>
+<body>
+    <button type="button" class="btn btn-primary" onclick="handleMouseClick()" onmouseover="handleMouserOver()">Cadastrar</button>
+
+
+    <p id="textoMensagem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia aperiam nobis consectetur magni quisquam dicta repellat ex eos? Tenetur repudiandae autem possimus quae placeat modi magni itaque quisquam quas rerum!</p>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
